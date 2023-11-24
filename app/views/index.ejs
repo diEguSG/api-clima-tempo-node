@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temperatura</title>
+
+    <link rel="stylesheet" href="/css/style.css" type="text/css">
+</head>
+<body>
+
+    <main>
+      <section>
+        <h1>Tempo agora em <%=apiClimaTempo.name%>, <%=apiClimaTempo.state%></h1>    
+        
+        <div>
+        <img src="https://www.climatempo.com.br/dist/images/v2/svg/<%=apiClimaTempo.data.icon%>.svg" alt="iconeTempo">
+        <h2><%=apiClimaTempo.data.temperature%>°</h2>
+        </div>
+    
+        <ul>
+            <li><%=apiClimaTempo.data.condition%></li>
+            <li>Sensação - <%=apiClimaTempo.data.sensation%>°</li>
+        </ul>
+      </section>
+    </main>
+    
+</body>
+</html>
