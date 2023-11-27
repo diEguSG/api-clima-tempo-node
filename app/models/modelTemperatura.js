@@ -9,7 +9,4 @@ Temperatura.prototype.salvarDados = function (json, callback){
 module.exports = function(){
     return Temperatura;
 }
-
-
-
-// id	id_cidade	data	condicao	temperatura	sensacao	humidade	pressao	vento_direcao	vento_velocidade	
+	
